@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <main>
+
+        <div class="leftObject" id="image">
+            <div id="logo">
+                <img src="./images/video-blogger.png" alt="goatIcon"/>
+                <p>Join our community!</p>
+            </div>
+            <div id="imageCredits">
+                <p>Community icons created by <a href="https://www.flaticon.com/free-icons/community" title="community icons" target="_blank">Freepik - Flaticon</a></p>
+                <p>Image Credits for <u>Jr. Korpa</u> on <a href="https://unsplash.com/pt-br/fotografias/stwHyPWNtbI" target="_blank">Unsplash</a></p>
+            </div>
+        </div>
+
+        <div class="rightObject" id="registration">
+
+            <div id="warning">
+                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <i>now</i> and get started.</h2>
+                <h2>You <i>know</i> you want to.</h2>
+            </div>
+            <div id="form">
+                <h2>Let's do this!</h2>
+                <form action="">
+
+                    <div class="inputs">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" pattern="\w{3,}"> 
+                    </div>
+                    
+                    <div class="inputs">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" pattern="\w{3,}">
+                    </div>
+
+                    <div class="inputs">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" pattern="\W{45}@invalid.com">
+                    </div>
+                    
+                    <div class="inputs">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" name="phoneNumber" id="phoneNumber" pattern="^[(]\d{2}[)]\d{5}-\d{4}$|^\d{7}-\d{4}$|^\d{11}$">
+                    </div>
+
+                    <div class="inputs">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" pattern="^\W{30}$">
+                    </div>
+                    
+                    <div class="inputs">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" pattern="^\W{30}$">
+                    </div>
+                    
+
+                </form>
+            </div>
+            <div id="button">
+                <button>Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+</html>
